@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p style="font-family: sans-serif;"><b style="color: #ff7033;">M</b>odern <b
+                style="color: #ff7033;">C</b>alculator</p>
+
+        <div class="calculator">
+            <input type="text " style="height: 100px;width:100%; background-color: black; color: yellow;" id="display"
+                disabled>
+
+            <div class="calculator__keys">
+                <button id="removeerror" class="key--operator" onclick="Showoperator('+')">+</button>
+                <button id="removeerror" class="key--operator" onclick="Showoperator('-')">-</button>
+                <button id="removeerror" class="key--operator" onclick="Showoperator('*')">x</button>
+                <button id="removeerror" class="key--operator" onclick="Showoperator('/')">÷</button>
+                <button id="removeerror" onclick="Shownumber('7')">7</button>
+                <button id="removeerror" onclick="Shownumber('8')">8</button>
+                <button id="removeerror" onclick="Shownumber('9')">9</button>
+                <button id="removeerror" onclick="Shownumber('4')">4</button>
+                <button id="removeerror" onclick="Shownumber('5')">5</button>
+                <button id="removeerror" onclick="Shownumber('6')">6</button>
+                <button id="removeerror" onclick="Shownumber('1')">1</button>
+                <button id="removeerror" onclick="Shownumber('2')">2</button>
+                <button id="removeerror" onclick="Shownumber('3')">3</button>
+                <button id="removeerror" onclick="Shownumber('0')">0</button>
+                <button id="removeerror" onclick="Showoperator('.')">.</button>
+                <button onclick="Clearitem()" id="ClearBtn3">AC</button>
+                <button class="key--equal" id="Generate" onclick="calculate('=')" disabled>=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
